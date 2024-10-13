@@ -2,9 +2,25 @@
 
 ![deeplearningmidjourney](https://github.com/kyleboddy/machine-learning-bits/assets/746351/6b2b1b9b-0fd8-4119-86e3-662db49d831b)
 
+## Introduction
+
+Driveline is proud to open-source our build files and Dockerfiles, designed to create a robust and flexible environment for biomechanics research and analysis. These files are specifically tailored to work seamlessly with the OpenBiomechanics repository, providing a standardized and reproducible setup for researchers and developers in the field of sports science and biomechanics.
+
+### Why Use This Setup?
+
+1. Reproducibility: Ensures consistent environments across different systems, critical for scientific research.
+2. Ease of Use: Simplifies the setup process for complex analysis environments.
+3. Flexibility: Supports a wide range of tools and libraries commonly used in biomechanics and data science.
+4. GPU Acceleration: Optimized for NVIDIA GPUs, enabling faster computations for intensive tasks.
+5. Community-Driven: Part of Driveline's commitment to open science, encouraging collaboration and innovation in sports biomechanics.
+
+This environment is ideal for researchers, data scientists, and developers working on biomechanics projects, particularly those utilizing the OpenBiomechanics framework.
+
 ## Summary
 
-This deep learning environment, built on an NVIDIA CUDA 12.3.1 base image, provides a high-performance computing setup for data science, sports analytics, and research domains. It features Conda for efficient package management, ensuring reproducibility and isolation of environments.
+This deep learning environment, built on an NVIDIA CUDA 12.3.1 base image, provides a high-performance computing setup for data science, sports analytics, and research domains.
+
+It features Conda for efficient package management, ensuring reproducibility and isolation of environments.
 
 ### Key Enhancements
 
@@ -48,7 +64,7 @@ This deep learning environment provides a comprehensive toolkit for transforming
 
 3. The script will output the status of the build process and send notifications to a specified Slack channel.
 
-4. Once the containers are created, you can SSH into them using the mapped ports (e.g., 7010 for jskolnicki_env).
+4. Once the containers are created, you can SSH into them using the mapped ports.
 
 ## Sample Programs in Python, R, and PHP for Environment Testing
 
@@ -285,5 +301,26 @@ A `RandomForestClassifier` is trained on the PCA-transformed and scaled training
 
 ### Model Evaluation
 The trained model is evaluated on the test set, and the classification report, including precision, recall, and F1-score for each class, is printed.
+
+# License
+
+MIT License
+Copyright (c) 2024 Driveline Research
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 
 This program covers various aspects of a typical machine learning workflow, from data loading and preprocessing to model training and evaluation, making it a solid example of using advanced data science tools in Python.
